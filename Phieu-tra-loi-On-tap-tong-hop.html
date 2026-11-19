@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>總複習 · Phiếu trả lời</title>
+<style>
+:root{--bg:#F6F4FB;--card:#fff;--ink:#1E1B2E;--mut:#6B6880;--line:#E2DDF0;--pri:#6B3FA0;--pri2:#EFE8F8;--ok:#1E7A46;--okbg:#E5F4EA;--bad:#B3261E;--badbg:#FBE9E7;--warn:#8A5A00;--warnbg:#FFF4D6}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:640px;margin:0 auto;padding:0 16px 120px}
+header{background:var(--pri);color:#fff;padding:18px 16px 16px;text-align:center}
+header h1{margin:0;font-size:22px;letter-spacing:.06em}header p{margin:4px 0 0;font-size:13px;opacity:.9}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.bonus{background:var(--warnbg);border-color:#F0D58A;color:var(--warn);font-size:14px}
+h2{font-size:17px;margin:0 0 4px;color:var(--pri)}h2 small{color:var(--mut);font-weight:400;font-size:13px}
+.note{font-size:13px;color:var(--mut);margin:0 0 10px}
+label.f{display:block;font-size:13px;color:var(--mut);margin:10px 0 4px}
+input[type=text]{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+input[type=text]:focus{outline:none;border-color:var(--pri)}
+.row{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--line)}.row:first-of-type{border-top:0}
+.n{flex:0 0 44px;font-weight:700;color:var(--pri);font-variant-numeric:tabular-nums}
+.ch{display:flex;gap:8px;flex:1}
+.ch button{flex:1;min-width:0;height:44px;border-radius:10px;border:1.5px solid var(--line);background:#fff;font:inherit;font-weight:700;font-size:17px;color:var(--ink)}
+.ch button.on{background:var(--pri);border-color:var(--pri);color:#fff}
+select{flex:1;height:44px;font:inherit;font-size:17px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);padding:0 10px}
+select.on{border-color:var(--pri);background:var(--pri2)}
+.gaps{flex:1;display:flex;gap:6px}.gaps>div{flex:1;min-width:0}.gaps input{width:100%;text-align:center;padding:10px 4px}
+.gl{font-size:12px;color:var(--mut);display:block;text-align:center}
+.btn{display:block;width:100%;height:50px;border:0;border-radius:12px;background:var(--pri);color:#fff;font:inherit;font-size:17px;font-weight:700}
+.btn.sec{background:#fff;color:var(--pri);border:1.5px solid var(--pri)}
+.btn:disabled{opacity:.45}
+.locked{opacity:.55;pointer-events:none}
+.lockmsg{font-size:13px;color:var(--ok);font-weight:700;margin:8px 0 0}
+.bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+.bar .in{max-width:640px;margin:0 auto;display:flex;gap:10px;align-items:center}
+.bar .cnt{font-size:13px;color:var(--mut);flex:0 0 auto}
+.modal{position:fixed;inset:0;background:rgba(30,27,46,.45);display:none;align-items:center;justify-content:center;padding:16px;z-index:9}
+.modal.show{display:flex}.modal .card{max-width:420px;width:100%;margin:0}
+.modal .acts{display:flex;gap:10px;margin-top:14px}
+.res{text-align:center}.score{font-size:64px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
+.score small{font-size:22px;color:var(--mut);font-weight:600}
+.verdict{display:inline-block;margin:8px 0 4px;padding:6px 14px;border-radius:999px;font-weight:700}
+.v-ok{background:var(--okbg);color:var(--ok)}.v-bad{background:var(--badbg);color:var(--bad)}.v-mid{background:var(--pri2);color:var(--pri)}
+table.bd{width:100%;border-collapse:collapse;margin-top:12px;font-size:15px}table.bd td{padding:8px;border-top:1px solid var(--line);text-align:left}table.bd td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.who{font-size:18px;font-weight:700}.when{font-size:13px;color:var(--mut)}
+.gv{margin-top:18px;background:none;border:0;color:var(--mut);font-size:12px;text-decoration:underline}
+.hide{display:none!important}
+</style></head><body>
+<header><h1>總複習 · 語法與聽力</h1><p>Phiếu trả lời · Câu hỏi xem trên màn hình của cô</p></header>
+<div class="wrap">
+<section id="start">
+ <div class="card bonus"><b>Đạt từ 80 điểm trở lên → được điểm cộng.</b><br>Dưới 50 điểm hoặc không gửi ảnh chụp trang kết quả → bị trừ điểm.</div>
+ <div class="card">
+  <h2>Thông tin</h2>
+  <label class="f" for="nm">Họ tên</label><input type="text" id="nm" autocomplete="off">
+  <label class="f" for="cl">Lớp</label><input type="text" id="cl" autocomplete="off">
+  <label class="f" for="no">Số thứ tự</label><input type="text" id="no" inputmode="numeric" autocomplete="off">
+  <p class="note" style="margin-top:12px">Chỉ được nộp <b>1 lần</b>. Nộp xong, chụp màn hình trang kết quả gửi cho cô.</p>
+  <button class="btn" id="go" disabled>Bắt đầu</button>
+ </div>
+</section>
+<section id="quiz" class="hide">
+ <div class="card"><h2>第二部分 · 語法 <small>Câu 1–30</small></h2>
+  <p class="note">Câu 1–20: chọn A, B, C, D.</p><div id="g1"></div></div>
+ <div class="card"><p class="note">Câu 21–30: chọn từ trong khung từ trên màn hình. Mỗi từ dùng 1 lần.</p><div id="g2"></div></div>
+ <div class="card"><h2>第三部分 · 聽力 <small>Câu 31–54</small></h2>
+  <p class="note"><b>Nghe lần 1</b> · Câu 31–36: chọn A, B, C, D.</p><div id="l1"></div>
+  <button class="btn sec" id="lock" style="margin-top:12px">Khóa đáp án nghe lần 1</button>
+  <p class="lockmsg hide" id="lockmsg">✓ Đã khóa câu 31–36.</p></div>
+ <div class="card"><p class="note"><b>Nghe lần 2</b> · Câu 37–54: gõ chữ Hán vào chỗ trống. <span id="lockhint">Phải khóa câu 31–36 trước mới làm được phần này.</span></p><div id="l2"></div></div>
+</section>
+<section id="result" class="hide"><div class="card res">
+ <div class="who" id="rWho"></div><div class="when" id="rWhen"></div>
+ <div class="score" id="rScore"></div><div id="rVer"></div>
+ <table class="bd"><tr><td>語法 · câu 1–30</td><td id="rG"></td></tr><tr><td>聽力 · câu 31–54</td><td id="rL"></td></tr><tr><td>Tổng số câu đúng</td><td id="rN"></td></tr></table>
+ <p class="note" style="margin-top:14px">Chụp màn hình trang này gửi cho cô.</p>
+ <button class="gv" id="gv">Giáo viên</button>
+</div></section>
+</div>
+<div class="bar hide" id="bar"><div class="in"><span class="cnt" id="cnt"></span><button class="btn" id="sub">Nộp bài</button></div></div>
+<div class="modal" id="mdl"><div class="card"><div id="mTxt"></div><div id="mExtra"></div><div class="acts"><button class="btn sec" id="mNo">Quay lại</button><button class="btn" id="mYes">Đồng ý</button></div></div></div>
+<script>
+const K='ontap115-r2-',BANK=["從", "對", "又", "過", "了", "比", "還是", "或是", "已經", "最", "再", "每"],PAY='AVEAEw9aUXATGVpRAxMPWlFyExlaUQITD1pRcxMZWlEFEw9aUXUTGVpRBBMPWlFzExlaUQcTD1pRdRMZWlEGEw9aUXITGVpRCRMPWlFzExlaUQgTD1pRchMZWlEAARdAUxN1F1ZTEwAEWEkRE3RYXxETBEhRCxEXOVEdERdLQBMLFVgxEx0VWEIFEw9aUXUTGVpRAAQXQFMTcBdWUxMAA1hJERN2WF8REwRNUQsRFztRHREXS0sTCxVYNxMdFVhCCBMPWlFzExlaUQMBF0BTE3AXVlMTAwRYSRET0MTtEx0VWEEDEw9aUdSBuFhfERMHSVELERef/LkTGVpRAwUXQFMT2LT0UR0RF0hGEwsVWJeLtxdWUxMDA1hJERPT1ecTHRVYQQYTD1pR2LOxnOueExlaUQMJF0BTE9e97JWpnhdWUxMDDFhJERPQzcHWh6ZYXxETBkpRCxEXnO+xExlaUQIAF0BTE3MXVlMTAgdYSRETdFhfERMGSVELERc5UR0RF0lHEwsVWDcTHRVYQAQTD1pRcxMZWlECBxdAUxNwF1ZTEwICWEkRahef9IvWoeVRbB0VWEAJEw9aKBPXmvebm68XVlMT15r3m56cFydfERMGQ1ELEW5Ym6iM0v7FEx0VWJqqp9L+xRNsGVpRBQEXQFNqE9HB/RMdFViWj68XJ18REwFLUQsRbliVvIbdxeMTHRVYlbyG3Pv4E2wZWlEFAxdAU2oT0cPsE2wZWlEFAhdAU2oT3cv114SzWF8RE93L9deNilguHREXTkcTCxUhUde4plguHREXTkYTCxUhUde4i1guHREXTkUTCxUhUde4pp3dphNoVlMTBQJYSRFqF5/2vNmHwVEdERef9rzZgcNRbB0VWEcJEw9aKBPVjfqbj4gXVlMT1Y36mrO7FydfERMBQ1ELEW5YloGAFydfERMASlELEW5Ylbi8FydfERMAS1ELEW5Ylo+mFydfERMASFELEW5Ylp6IF1ZTE9SF91FsHRVYRgITD1ooE9SIy5S4thcnXxETAE5RCxFuWJuXsNPi3BNsSA==',TEACH='2468',CFG={"NG": 20, "b1": 21, "b2": 30, "l1": 31, "l2": 36, "g1": 37, "TOT": 54, "gaps": [3, 3, 3, 3, 3, 3]};
+const {NG,b1,b2,l1,l2,g1,TOT,gaps}=CFG;
+const LS={get(k){try{return JSON.parse(localStorage.getItem(K+k))}catch(e){return null}},set(k,v){try{localStorage.setItem(K+k,JSON.stringify(v))}catch(e){}},del(k){try{localStorage.removeItem(K+k)}catch(e){}}};
+const $=id=>document.getElementById(id);
+function dec(){const s=atob(PAY),b=new Uint8Array([...s].map(c=>c.charCodeAt(0)));const k='zs115';for(let i=0;i<b.length;i++)b[i]^=k.charCodeAt(i%k.length);return JSON.parse(new TextDecoder().decode(b))}
+let A=LS.get('ans')||{},INFO=LS.get('info')||{},LOCK=!!LS.get('lock');
+const save=()=>LS.set('ans',A);
+function mcRow(n,host){const r=document.createElement('div');r.className='row';r.innerHTML=`<span class="n">${n}</span><div class="ch">${'ABCD'.split('').map(x=>`<button type="button" data-q="${n}" data-v="${x}">${x}</button>`).join('')}</div>`;host.appendChild(r)}
+for(let n=1;n<=NG;n++)mcRow(n,$('g1'));
+for(let n=b1;n<=b2;n++){const r=document.createElement('div');r.className='row';r.innerHTML=`<span class="n">${n}</span><select data-q="${n}"><option value="">— chọn —</option>${BANK.map((w,i)=>`<option value="${w}">${'ABCDEFGHIJKL'[i]}  ${w}</option>`).join('')}</select>`;$('g2').appendChild(r)}
+for(let n=l1;n<=l2;n++)mcRow(n,$('l1'));
+{let n=g1;gaps.forEach((c,p)=>{const r=document.createElement('div');r.className='row';let h='';for(let j=0;j<c;j++,n++)h+=`<div><span class="gl">${n}</span><input type="text" data-q="${n}" lang="zh-Hant" autocomplete="off" autocapitalize="off" spellcheck="false"></div>`;r.innerHTML=`<span class="n">第${p+1}段</span><div class="gaps">${h}</div>`;$('l2').appendChild(r)})}
+const L1=[];for(let n=l1;n<=l2;n++)L1.push(n);
+function paint(){document.querySelectorAll('.ch button').forEach(b=>b.classList.toggle('on',A[b.dataset.q]===b.dataset.v));
+ document.querySelectorAll('select[data-q]').forEach(s=>{s.value=A[s.dataset.q]||'';s.classList.toggle('on',!!s.value)});
+ document.querySelectorAll('input[data-q]').forEach(i=>{if(document.activeElement!==i)i.value=A[i.dataset.q]||''});
+ $('l1').classList.toggle('locked',LOCK);$('lock').classList.toggle('hide',LOCK);$('lockmsg').classList.toggle('hide',!LOCK);
+ $('l2').classList.toggle('locked',!LOCK);$('lockhint').classList.toggle('hide',LOCK);
+ let c=0;for(let n=1;n<=TOT;n++)if((A[n]||'').trim())c++;$('cnt').textContent=`Đã làm ${c}/${TOT}`}
+document.addEventListener('click',e=>{const b=e.target.closest('.ch button');if(!b||b.closest('.locked'))return;A[b.dataset.q]=b.dataset.v;save();paint()});
+document.addEventListener('change',e=>{if(e.target.matches('select[data-q]')){A[e.target.dataset.q]=e.target.value;save();paint()}});
+document.addEventListener('input',e=>{if(e.target.matches('input[data-q]')){A[e.target.dataset.q]=e.target.value;save();paint()}});
+function ask(html,extra,yes){$('mTxt').innerHTML=html;$('mExtra').innerHTML=extra||'';$('mdl').classList.add('show');$('mYes').onclick=()=>{if(yes()!==false)$('mdl').classList.remove('show')};$('mNo').onclick=()=>$('mdl').classList.remove('show')}
+['nm','cl','no'].forEach(id=>{$(id).value=INFO[id]||'';$(id).addEventListener('input',()=>{INFO[id]=$(id).value;LS.set('info',INFO);$('go').disabled=!(INFO.nm||'').trim()||!(INFO.cl||'').trim()||!(INFO.no||'').trim()})});
+$('go').disabled=!(INFO.nm&&INFO.cl&&INFO.no);
+function show(s){['start','quiz','result'].forEach(x=>$(x).classList.toggle('hide',x!==s));$('bar').classList.toggle('hide',s!=='quiz');window.scrollTo(0,0)}
+$('go').onclick=()=>{LS.set('started',1);show('quiz');paint()};
+$('lock').onclick=()=>{const miss=L1.filter(n=>!A[n]);ask(`<h2>Khóa câu ${l1}–${l2}?</h2><p class="note">Sau khi khóa sẽ <b>không sửa được</b> câu ${l1}–${l2}.${miss.length?` Còn bỏ trống: câu ${miss.join(', ')}.`:''}</p>`,'',()=>{LOCK=true;LS.set('lock',1);paint()})};
+const norm=s=>(s||'').replace(/[\s　，。、．,.!！?？()（）［］\[\]「」_＿〔〕]/g,'');
+function grade(){const D=dec();let g=0,l=0;for(let n=1;n<=TOT;n++){const a=A[n]||'',k=D[n];const ok=Array.isArray(k)?k.includes(norm(a)):a===k;if(ok){n<=b2?g++:l++}}return{g,l}}
+$('sub').onclick=()=>{let miss=[];for(let n=1;n<=TOT;n++)if(!(A[n]||'').trim())miss.push(n);
+ ask(`<h2>Nộp bài?</h2><p class="note">Chỉ được nộp <b>1 lần</b>, nộp xong không làm lại được.${miss.length?`<br>Còn bỏ trống ${miss.length} câu: ${miss.join(', ')}.`:''}</p>`,'',()=>{const r=grade();r.t=Date.now();r.info=INFO;LS.set('res',r);renderRes(r);show('result')})};
+const fmt=x=>(Math.round(x*10)/10).toString().replace('.',',');
+function renderRes(r){const s=(r.g+r.l)/TOT*100;$('rWho').textContent=`${r.info.nm} · ${r.info.cl} · số ${r.info.no}`;
+ const d=new Date(r.t),p=x=>String(x).padStart(2,'0');$('rWhen').textContent=`Nộp lúc ${p(d.getHours())}:${p(d.getMinutes())} · ${p(d.getDate())}/${p(d.getMonth()+1)}/${d.getFullYear()}`;
+ $('rScore').innerHTML=`${fmt(s)}<small> / 100</small>`;
+ $('rVer').innerHTML=s>=80?'<span class="verdict v-ok">Đạt điểm cộng</span>':s<50?'<span class="verdict v-bad">Dưới 50 điểm</span>':'<span class="verdict v-mid">Đã nộp</span>';
+ $('rG').textContent=`${r.g} / ${b2} câu`;$('rL').textContent=`${r.l} / ${TOT-b2} câu`;$('rN').textContent=`${r.g+r.l} / ${TOT}`}
+$('gv').onclick=()=>ask('<h2>Giáo viên</h2><p class="note">Nhập mã để xóa bài và cho làm lại từ đầu.</p>','<input type="text" id="tc" inputmode="numeric" autocomplete="off">',()=>{if(($('tc').value||'').trim()!==TEACH){$('tc').style.borderColor='var(--bad)';return false}['ans','info','lock','res','started'].forEach(k=>LS.del(k));location.reload()});
+const R=LS.get('res');if(R){renderRes(R);show('result')}else if(LS.get('started')&&INFO.nm){show('quiz');paint()}else show('start');
+</script></body></html>
